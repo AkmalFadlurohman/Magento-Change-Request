@@ -928,3 +928,5 @@
 127.0.0.1 - - [26/Jan/2018:15:02:48 +0700] "GET /fusion-backpack.html HTTP/1.1" 200 62029
 127.0.0.1 - - [26/Jan/2018:15:02:50 +0700] "GET /customer/section/load/?sections=directory-data%2Ccustomer%2Ccompare-products%2Clast-ordered-items%2Ccart%2Cinstant-purchase%2Cwishlist%2Crecently_viewed_product%2Crecently_compared_product%2Cproduct_data_storage%2Cpaypal-billing-agreement&update_section_id=false&_=1516953770393 HTTP/1.1" 200 34392
 127.0.0.1 - - [26/Jan/2018:15:02:50 +0700] "GET /customer/section/load/?sections=directory-data&update_section_id=false&_=1516953770394 HTTP/1.1" 200 33026
+127.0.0.1 - - [27/Jan/2018:08:17:44 +0700] "GET /pub/media/catalog/product/cache/926507dc7f93631a094422215b778fe0/m/b/mb02-gray-0.jpg HTTP/1.1" 200 113795
+127.0.0.1 - - [27/Jan/2018:08:17:44 +0700] "GET /pub/media/catalog/product/cache/926507dc7f93631a094422215b778fe0/m/b/mb02-blue-0.jpg HTTP/1.1" 304 -
