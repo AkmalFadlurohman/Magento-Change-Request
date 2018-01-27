@@ -29,8 +29,7 @@
 </div> 
 
 <script>
-  //imageZoom("myimage", "myresult");
-  document.getElementById("zoom-container").onmouseover = function() {
+  document.getElementById("zoom-container").onmousemove = function() {
     document.getElementById('zoom-img').style.display = 'block';
     var img, lens, result, cx, cy;
     img = document.getElementById("product-img");
@@ -70,10 +69,13 @@
       return {x : x, y : y};
     }
   }
-  document.getElementById("zoom-container").onmouseout = function() {
-    document.getElementById('myresult').style.display = 'none';
+  document.getElementById("product-img").onmouseout = function() {
+    /*var img = document.getElementById("product-img");
     var lens = document.getElementById("zoom-lens");
-    lens.parentNode.removeChild(lens);
+    lens.removeEventListener("mousemove", moveLens);
+    img.removeEventListener("mousemove", moveLens);*/
+    //lens.parentNode.removeChild(lens);
+    document.getElementById('zoom-img').style.display = 'none';
   }
 </script>
 

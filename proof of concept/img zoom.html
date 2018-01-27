@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {box-sizing: border-box;}
+.product-img-container {
+  position: relative;
+}
+#product-img{
+	width: 300px;
+	height: 200px;
+}
+
+#overlay{
+	border: 1px solid #d4d4d4;
+  	width: 300px;
+  	height: 200px;
+  	display: none;
+  	background-repeat:no-repeat;
+}
+</style>
+<script type="text/javascript">
+	function zoomIn(event) {
+	  	var overlay = document.getElementById("overlay");
+	  	overlay.style.display = "inline-block";
+	 	var img = document.getElementById("product-img");
+	  	var posX = event.offsetX ? (event.offsetX) : event.pageX - img.offsetLeft;
+	  	var posY = event.offsetY ? (event.offsetY) : event.pageY - img.offsetTop;
+	  	overlay.style.backgroundPosition=(-posX*3)+"px "+(-posY*3)+"px";
+	  	overlay.style.backgroundImage = "url('" + img.src + "')";
+	}
+	function zoomOut() {
+  		var overlay = document.getElementById("overlay");
+  		overlay.style.display = "none";
+	}
+</script>
+</head>
+<body>
+	<div class="product-img-container">
+  		<img id="product-img" src="Mola-Mola.jpg" width="300" height="200" onmousemove="zoomIn(event)" onmouseout="zoomOut()">
+  		<div id="overlay"></div>
+	</div>
+</body>
+</html>
