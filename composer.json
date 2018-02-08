@@ -71,7 +71,9 @@
         "ext-pdo_mysql": "*",
         "ext-soap": "*",
         "sjparkinson/static-review": "~4.1",
-        "ramsey/uuid": "3.7.1"
+        "ramsey/uuid": "3.7.1",
+        "fooman/printorderpdf-m2": "2.2.1",
+        "doctrine/annotations": "^1.7@dev"
     },
     "require-dev": {
         "phpunit/phpunit": "~6.2.0",
@@ -263,5 +265,11 @@
             "Magento\\TestFramework\\Utility\\": "dev/tests/static/framework/Magento/TestFramework/Utility/"
         }
     },
-    "minimum-stability": "stable"
+    "minimum-stability": "dev",
+    "repositories": {
+        "emizentech-magento2-best-seller": {
+            "type": "vcs",
+            "url": "https://github.com/emizentech/magento2-best-seller/"
+        }
+    }
 }
