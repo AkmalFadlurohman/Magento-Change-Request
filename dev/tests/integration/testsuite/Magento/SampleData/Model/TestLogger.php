@@ -1,0 +1,1 @@
+/Users/akmalfadlurohman/Sites/magento2-sample-data2/dev/tests/integration/testsuite/Magento/SampleData/Model/TestLogger.php
