@@ -1,0 +1,15 @@
+Best Seller Product With Scroller
+Best Seller products with scroller extension allows you to set and show best seller products in frontend.
+
+This extension gives ability to show best seller product block in cms pages or phtml.
+If you want to show in any other cms page or static block then you can easily add by: 
+Homepage, CMS page: 
+	{{block type="bestseller/bestseller" template="magehit/bestseller/bestsellerblock.phtml"}}
+	OR insert this code:
+	<?php echo $this->getLayout()->createBlock('bestseller/bestseller')->setTemplate('bestseller/bestsellerblock.phtml')->toHtml(); ?>
+To your template (phtml) file Left/Right sidebar
+	{{block type="bestseller/bestseller" template="bestseller/vertical_bestsellerblock.phtml"}}
+	OR insert this code:
+	<?php echo $this->getLayout()->createBlock('bestseller/bestseller')->setTemplate('bestseller/vertical_bestsellerblock.phtml')->toHtml(); ?>
+To your template (phtml) file
+	
